@@ -17,9 +17,7 @@ input.addEventListener("input", async (e) => {
     for (let i = 0; i < result.Search.length; i++) {
       html =
         html +
-        `       
-                
-        
+        `
         <div class="card m-3" style="width: 500px">
         <div class="card-header">
                 <img src=${result.Search[i].Poster} />
