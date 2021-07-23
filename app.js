@@ -2,7 +2,7 @@ let input = document.querySelector("#input");
 let root = document.querySelector("#results");
 input.addEventListener("input", async (e) => {
   let value = e.target.value;
-  let url = `http://www.omdbapi.com/?apikey=${api_key}&s=${value}`;
+  const url = `http://www.omdbapi.com/?apikey=${api_key}&s=${value}`;
   let rawResult = await fetch(url);
   let result = await rawResult.json();
   console.log(result);
